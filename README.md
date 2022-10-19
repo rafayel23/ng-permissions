@@ -70,9 +70,6 @@ Use `ReadAccessGuard` as a routing guard. For this you also need to specify `dat
 It will make sure user cannot navigate to module where he doesn't have `read` access level.
 ```
 {
-    path: 'users',
-    loadChildren: -----
-
     canLoad: [ReadAccessGuard],
     data: {module: 'module_1'},
 }
