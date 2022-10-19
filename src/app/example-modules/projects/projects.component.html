@@ -1,0 +1,10 @@
+<h1>Projects Page</h1>
+
+<button *accessLevel="'write'" (click)="addProject()">Add Project</button>
+
+<ul>
+    <li *ngFor="let project of projects; index as i">
+        <span>{{project}}</span>
+        <button *accessLevel="'delete'" (click)="removeProject(i)">Delete</button>
+    </li>
+</ul>

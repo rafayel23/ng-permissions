@@ -1,0 +1,15 @@
+<nav>
+    <span accessModule="users" style="margin: 10px">
+        <a *accessLevel="'read'" routerLink="/users">Users</a>
+    </span>
+
+    <span accessModule="projects" style="margin: 10px">
+        <a *accessLevel="'read'" routerLink="/projects">Projects</a>
+    </span>
+
+    <span accessModule="groups" style="margin: 10px">
+        <a *accessLevel="'read'" routerLink="/groups">Groups</a>
+    </span>
+</nav>
+
+<router-outlet></router-outlet>

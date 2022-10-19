@@ -1,0 +1,10 @@
+<h1>Users Page</h1>
+
+<button *accessLevel="'write'" (click)="addUser()">Add User</button>
+
+<ul>
+    <li *ngFor="let user of users; index as i">
+        <span>{{user}}</span>
+        <button *accessLevel="'delete'" (click)="removeUser(i)">Delete</button>
+    </li>
+</ul>

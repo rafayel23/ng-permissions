@@ -1,0 +1,10 @@
+<h1>Groups Page</h1>
+
+<button *accessLevel="'write'" (click)="addGroup()">Add Group</button>
+
+<ul>
+    <li *ngFor="let group of groups; index as i">
+        <span>{{group}}</span>
+        <button *accessLevel="'delete'" (click)="removeGroup(i)">Delete</button>
+    </li>
+</ul>
