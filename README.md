@@ -28,7 +28,7 @@ This way you will bind current feature module to matching permissions from `Perm
 
 ```
 imports: [
-    NgPermissions.forModule('nodule_1')
+    NgPermissions.forModule('module_1')
 ]
 ```
 
